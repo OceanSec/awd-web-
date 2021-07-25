@@ -1,0 +1,48 @@
+version: "3"
+services:
+    # web
+    web1:
+        build: ./web2
+        ports:
+            - "28001:80"
+            - "22201:22"
+    web2:
+        build: ./web2
+        ports:
+            - "28002:80"
+            - "22202:22"
+    web3:
+        build: ./web2
+        ports:
+            - "28003:80"
+            - "22203:22"
+
+    web4:
+        build: ./web2
+        ports:
+            - "28004:80"
+            - "22204:22"
+
+    web5:
+        build: ./web2
+        ports:
+            - "28005:80"
+            - "22205:22"
+
+    web6:
+        build: ./web2
+        ports:
+            - "28006:80"
+            - "22206:22"
+
+    web7:
+        build: ./web2
+        ports:
+            - "28007:80"
+            - "22207:22"
+            
+    web8:
+        build: ./web2
+        ports:
+            - "28008:80"
+            - "22208:22" 
